@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta lang="en-US" dir="ltr">
+		<title>Pak-US Coalition</title>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="indexcss.css">
+
+
+		<script type="text/javascript">
+
+			function menu_expand(){
+				document.getElementById('dropdown').classList.toggle('active');
+			}
+
+			function unis_expand(){
+				document.getElementById('hide1').classList.toggle('show');
+				document.getElementById('hide2').classList.toggle('show');
+				document.getElementById('hide3').classList.toggle('show');
+				document.getElementById('hide4').classList.toggle('show');
+			}
+
+
+		</script>
+	</head>
+
+
+	<body>
+
+		<div id="forimgdownload" class="noshow">
+			<img src="logobackgrounds/background1.jpg">
+			<img src="logobackgrounds/background2.jpg">
+			<img src="logobackgrounds/background3.jpg">
+			<img src="logobackgrounds/background4.jpg">
+			<img src="logobackgrounds/background5.jpg">
+			<img src="logobackgrounds/background6.jpg">
+		</div>
+
+
+
+		<header>
+			<span class="menubar">
+				<div class="slogo">
+					<img src="slogo.jpg" alt="logo" height="50px" height=30px>
+				</div>
+				<div class="list">
+					<ul>
+						<!-- <li><img src="slogo.jpg" alt="logo" height="50px" height=30px></li> -->
+						<li  class="activetab"><a href="index.html">HOME</a></li>
+						<li><a href="vision.html">VISION</a></li>
+						<li><a href="projects.html">PROJECTS</a></li>
+						<!-- <li><a href="resources.html">RESOURCES</a></li> -->
+						<li><a href="contact.html">CONTACT US</a></li>
+						<li><a href="https://docs.google.com/forms/d/12yQqpywCZpyekVl941cvz_potymMBwNOmqRgncwAKww/viewform?edit_requested=true">JOIN US</a></li>
+					</ul>
+				</div>
+				<div class="togglemenu">
+					<button type="button" data-toggle="collapse" onclick="menu_expand()">
+      					<i class="fa fa-bars"></i>
+      				</button>
+    			</div>
+    			<div id="dropdown" class="dropdowns">
+    				<ul>
+						<li class="activetab"><a href="index.html">HOME</a></li>
+						<li><a href="vision.html">VISION</a></li>
+						<li><a href="projects.html">PROJECTS</a></li>
+						<!-- <li><a href="resources.html">RESOURCES</a></li> -->
+						<li><a href="contact.html">CONTACT US</a></li>
+						<li><a href="https://docs.google.com/forms/d/12yQqpywCZpyekVl941cvz_potymMBwNOmqRgncwAKww/viewform?edit_requested=true">JOIN US</a></li>
+					</ul>
+    			</div>
+			</span>
+		</header>
+
+		<section class="logo">
+				<img src="logo.jpg" alt="Logo">
+		</section>
+
+		<section id="about" class="aboutus">
+			<h2>
+				About Us
+			</h2>
+			<div class="ind">
+				<p>
+					The Coalition of Pakistani students - US is a network of Pakistani students/students of Pakistani origin studying in the United States. Currently, we are working to pool in our collective resources and collaborate to raise funds for the most disadvantaged, during the Covid-19 crisis.
+				</p>
+			</div>
+			<button><a href="vision.html">LEARN MORE</a>
+		</section>
+
+
+		<section class="unis">
+			<h2><i>Connecting students from universities all over the US including:</i></h2>
+			<div class="uniwrap">
+				<div>
+					<a href="https://www.brown.edu/">
+						<img src="UniLogos/brown.png"  height="125px" alt="Brown University">
+					</a>
+				</div>
+				<div>
+					<a href="https://www.columbia.edu/">
+						<img src="UniLogos/columbia.jpg" height="125px" alt="Columbia University">
+					</a>
+				</div>
+				<div>
+					<a href="https://www.berkeley.edu/">
+						<img src="UniLogos/ucblogo.jpg" height="125px" alt="University of California Berkeley">
+					</a>
+				</div>
+				<div>
+					<a href="https://umich.edu/">
+						<img src="UniLogos/umich.jpg" height="125px" alt="University of Michigan">
+					</a>
+				</div>
+				<div id="hide1" class="hides">
+					<a href="https://duke.edu/">
+						<img src="UniLogos/duke.jpg" height="125px" alt="Duke University">
+					</a>
+				</div>
+				<div id="hide2" class="hides">
+					<a href="https://www.harvard.edu/">
+						<img src="UniLogos/harvard.png" height="150px" alt="Harvard University">
+					</a>
+				</div>
+				<div id="hide3" class="permanenthide" class="ph2" class="hides">
+					<a href="https://www.swarthmore.edu/">
+						<img src="UniLogos/swarthmore.png" height="125px" alt="Swarthmore College">
+					</a>
+				</div>
+				<div id="hide4" class="permanenthide" class="ph2" class="hides">
+					<a href="https://www.yale.edu/">
+						<img src="UniLogos/yale.png" height="125px" alt="Yale University">
+					</a>
+				</div>
+			</div>
+			<div class="more-unis-button">
+				<button onclick="unis_expand()">
+					SEE MORE
+				</button>
+			</div>
+		</section>
+
+		<section class="proj">
+			<h2>Projects</h2>
+			<div class="pwrap">
+				<div class="p1">
+					<a href="projects.html#rahbarp">
+						<img src="projectlogos/Rahbar Project.jpg" height="200px">
+					</a>
+				</div>
+				<div class="p2">
+					<a href="projects.html#covidp">
+						<img src="projectlogos/Covid Relief.jpg" height="200px">
+					</a>
+				</div>
+			</div>
+			<button><a href="projects.html">LEARN MORE</a>
+		</section>
+
+
+		<section id="contact" class="contacts">
+			<h2>Contact Us</h2>
+			<h4><i>If you have any questions, get in touch!</i></h4>
+			<a href="mailto:student.coalition.pakistan@gmail.com">Email:student.coalition.pakistan@gmail.com</a>
+			<div class="mainbar">
+				<nav>
+					<ul>
+						<li><a href="https://www.facebook.com/groups/230947397963605" class="fa fa-facebook"></a></li>
+						<li><a href="" class="fa fa-twitter"></a></li>
+						<li><a href="https://www.instagram.com/pakuscoalition/" class="fa fa-instagram"></a></li>
+						<li><a href="https://www.linkedin.com/groups/12424730/" class="fa fa-linkedin"></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="end">
+				<a>Coalition of Pakistani Students US | Site Designed & Developed by: <a href="https://aasherakhlaque.me">Aasher Akhlaque</a></a>
+			</div>
+		</section>
+
+	</body>
+
+
+</html>

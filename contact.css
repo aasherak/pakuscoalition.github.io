@@ -1,0 +1,362 @@
+html{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+	margin: 0;
+}
+
+@keyframes alogo {
+	from {
+		filter: blur(10px);
+		overflow: hidden;
+	}
+	to {
+		filter: blur(0px);
+		overflow: hidden;
+	}
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+.menubar {
+	z-index: 999;
+	display: inline-block;
+	width: 100%;
+	height: 95px;
+	background: white;
+	position: fixed;
+	box-sizing: border-box;
+	border-bottom: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #00A8EF;
+/*	border-top: solid;
+	border-top-width: 5px;
+	border-top-color: rgb(27, 130, 111);*/
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.menubar .slogo {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 20px 0 20px 0;
+}
+
+.menubar .list {
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	width: 76%;
+	height: 100%;
+
+}
+
+.menubar ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+.menubar .list li {
+	display: inline-block;
+	height: 90px;
+	padding: 30.6px 16px 30.6px 16px;
+	box-sizing: border-box;
+}
+
+.menubar a {
+	color: /*#4c4350*/ black;
+	text-decoration: none;
+	font-size: 1.0em;
+	font-weight: 700;
+}
+
+/*.menubar li:hover{
+	background: white;
+}*/
+
+.menubar li:hover a{
+	color: #1B826F;
+}
+
+/*.activetab {
+	background: white;
+}*/
+
+.activetab a {
+	color: #1B826F;
+}
+
+.menubar .togglemenu, .menubar .dropdowns {
+	display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+	.menubar .list {
+		display: none;
+	}
+
+	.menubar .dropdowns {
+		/*display: none;*/
+		display: initial;
+		text-align: right;
+	}
+
+	.menubar .dropdowns ul {
+		padding: 20px 30px;
+		background: white;
+		display: none;
+	}
+
+	.togglemenu button {
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	.menubar .active  ul {
+		display: block;
+		padding: 20px 30px;
+		background: white;
+	}
+
+	.menubar .dropdowns li {
+		list-style-type: none;
+		padding: 8px;
+	}
+
+	.menubar .togglemenu {
+		display: inline-block;
+		width: 76%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+		text-align: right;
+	}
+
+	.menubar .fa {
+		margin: 0;
+		padding: 29px 0;
+		color: rgb(27, 130, 111);
+	}
+
+}
+
+/*----------------------------------------------------------------------------------*/
+
+.cheading {
+	padding-top: 95px;
+	padding-bottom: 80px;
+	text-align: center;
+	font-weight: 900;
+	position: relative;
+}
+
+.backgroundimage {
+	position: absolute;
+	top: 0;
+	background: url(backgrounds/pbackground.jpg);
+	background-size: cover;
+	background-position: center;
+	filter: blur(4px);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.cheading h2 {
+	padding-top: 60px;
+	padding-bottom: 20px;
+	margin: 0;
+	font-size: 5em; 
+	color: white;
+	letter-spacing: 1px;
+	animation: alogo 1s 1;
+}
+
+.cont {
+	padding: 50px 20px 50px;
+}
+
+
+
+/*----------------------------------------------------------------------------------*/
+
+section {
+	border-top: solid;
+	border-top-color: #00A8EF; 
+	border-top-width: 6px;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+.forms h4 {
+	color: #4c4350;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.forms {
+	padding-bottom: 40px;
+}
+
+.forms .formbtn {
+	display: block;
+	margin: 0 auto;
+}
+
+.forms button {
+	margin-top: 0px;
+	background: #1fd15d /*rgb(27, 130, 111)*/;
+	height: 70px;
+	width: 100px;
+	border: none;
+	text-decoration: none;
+	color: white;
+	font-size: 1.4em;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.forms label {
+	display: none;
+}
+
+.forms input, .forms textarea {
+	width: 40%;
+	height: 60px;
+	margin: 0 auto;
+	border: solid;
+	border-width: 2px;
+	border-color: rgb(27, 130, 111);
+	font-size: 1.2em;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-left: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+	.forms input, .forms textarea {
+		width: 70%;
+	}
+}
+
+.forms textarea {
+	padding-top: 30px;
+}
+
+.forms button:hover {
+	background: #00A8EF;
+	transform: scale(1.2);
+}
+
+.forms .formwrap {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 40px;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+.contacts {
+	background: #23252f;
+	padding: 40px 10px 40px;
+	padding-bottom: 100px;
+	text-align: center;
+	border-top: solid;
+	border-top-width: 6px;
+	border-top-color: #00A8EF;
+}
+
+.contacts h2 {
+	font-size: 2em;
+	font-weight: 600;
+	color: white;
+}
+
+.contacts h4 {
+	font-size: 1.5em;
+	font-weight: 400;
+	color: white;
+}
+
+.contacts a {
+	color:white;
+	font-size: 1.2em;
+}
+
+@media only screen and (max-width: 650px) {
+
+	.contacts a {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	.contacts a {
+		font-size: 0.9em;
+	}
+}
+
+.contacts ul {
+	text-align: center;
+	padding-left: 0;
+}
+
+.contacts li {
+	display: inline;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 2em;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-instagram{
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+    color: white;
+}
+
+.end {
+	padding-top: 20px;
+}
+
+.end a {
+	padding-top: 30px;
+	color: darkgray;
+}
