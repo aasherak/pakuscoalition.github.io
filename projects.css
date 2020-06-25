@@ -32,7 +32,7 @@ body{
 	box-sizing: border-box;
 	border-bottom: solid;
 	border-bottom-width: 5px;
-	border-bottom-color: #00A8EF;
+	border-bottom-color: rgb(27, 130, 111);
 /*	border-top: solid;
 	border-top-width: 5px;
 	border-top-color: rgb(27, 130, 111);*/
@@ -219,7 +219,7 @@ section {
 }
 
 .projects p {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	text-align: center;
 }
 
@@ -228,24 +228,73 @@ section {
 }
 
 .projects .proj-rahbar, .projects .proj-covid {
-	padding-top: 40px;
+	padding-top: 100px;
 	border-top: solid;
 	border-top-color: #00A8EF; 
 	border-top-width: 6px;
-	padding: 20px 30px;
+	padding: 0px 30px;
+}
+
+.projects .divider {
+	display: inline-block;
+	width: 60%;
+	height: 3px;
+	margin-bottom: 30px;
+	border: none;
+	background: #00A8EF; 
 }
 
 .projects .totalwrap {
-	background: rgb(27, 130, 111);
-	padding: 20px 30px 40px;
+	border-top: none;
+	border-top-color: #00A8EF; 
+	border-top-width: 6px;	
+}
+
+.projects .totalwrap {
+	background:;
+	padding: 0px 30px 40px;
+}
+
+.totalwrap h3 {
+	margin-top: 0;
 }
 
 .projects .totalwrap .nameimgwrap {
-	padding-top: 40px;
+	padding-top: 10px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-row-gap: 40px;
 	grid-column-gap: 20px;
+}
+
+.projects p {
+	padding-bottom: 20px;
+}
+
+.projects img {
+	border: none;
+	border-radius: 50%;
+	height: 200px;
+}
+
+.nameimgwrap {
+	padding-bottom: 50px;
+}
+
+
+@media only screen and (min-width: 750px){
+
+	.projects p {
+		width: 60%;
+		margin: 0 auto;
+		padding-bottom: 50px;
+	}
+
+	.projects .totalwrap {
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+
 }
 
 @media only screen and (max-width: 750px){
@@ -257,7 +306,6 @@ section {
 }
 
 .projects h3 {
-	color: white;
 	font-size: 1.5em;
 }
 

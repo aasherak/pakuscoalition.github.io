@@ -7,7 +7,7 @@ body{
 }
 
 @keyframes alogo {
-	from {
+	from { 
 		filter: blur(10px);
 		overflow: hidden;
 	}
@@ -20,13 +20,13 @@ body{
 @keyframes slideshow {
 
 	0% {
-		background: url(logobackgrounds/background1.jpg);
+		background: url(logobackgrounds/background3.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 
 	20% {
-		background: url(logobackgrounds/background3.jpg);
+		background: url(logobackgrounds/background5.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center right;
@@ -40,7 +40,7 @@ body{
 	}
 
 	60% {
-		background: url(logobackgrounds/background5.jpg);
+		background: url(logobackgrounds/background1.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -74,7 +74,7 @@ body{
 	box-sizing: border-box;
 	border-bottom: solid;
 	border-bottom-width: 5px;
-	border-bottom-color: #00A8EF;
+	border-bottom-color: rgb(27, 130, 111);
 /*	border-top: solid;
 	border-top-width: 5px;
 	border-top-color: rgb(27, 130, 111);*/
@@ -201,7 +201,7 @@ body{
 
 /*------------------------------------------------------------------------------------------------------------*/
 .logo{
-	animation: slideshow 20s infinite steps(1);
+	animation: slideshow 30s infinite steps(1);
 	padding: 220px 20px 160px;
 	/*background: url(backgrounds/hbackground.jpg);*/
 }
@@ -229,7 +229,7 @@ body{
 /*------------------------------------------------------------------------------------------------------------*/
 
 .aboutus {
-	background: /*rgb(27, 130, 111)*/ white;
+	background: /*rgb(27, 130, 111)*/;
 	padding: 40px 40px 10px;
 	padding-bottom: 100px;
 	color: #4c4350;
@@ -411,6 +411,7 @@ body{
 
 .proj {
 	padding-bottom: 100px;
+	padding-top: 40px;
 	color: #4c4350;
 	border-top: solid;
 	border-top-width: 6px;
@@ -432,9 +433,22 @@ body{
 
 .proj .pwrap {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-row-gap: 40px;
 	grid-column-gap: 20px;
+}
+
+.proj .pwrap .p1, .proj .pwrap .p2 {
+	width: 310px;
+}
+
+.proj .pwrap .p1 {
+	/*margin: 0 0 0 auto;*/
+	margin: 0 auto;
+}
+
+.proj .pwrap .p2 {
+	margin: 0 auto 0 0;
 }
 
 .proj .pwrap img:hover {
@@ -448,10 +462,14 @@ body{
 	}
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 750px) {
 	
 	.proj .pwrap {
 		grid-template-columns: 1fr;
+	}
+
+	.proj .pwrap .p1, .proj .pwrap .p2 {
+		margin: 0 auto;
 	}
 }
 
