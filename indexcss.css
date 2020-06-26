@@ -201,15 +201,19 @@ body{
 
 /*------------------------------------------------------------------------------------------------------------*/
 .logo{
-	animation: slideshow 30s infinite steps(1);
-	padding: 220px 20px 160px;
+	background: url(logobackgrounds/background3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: slideshow 60s infinite;
+	animation-delay: 5s;
+	padding: 150px 20px 100px;
 	/*background: url(backgrounds/hbackground.jpg);*/
 }
 
 .logo img {
 	display: block;
 	margin: 0 auto;
-	height: 380px;
+	height: 500px;
 /*	border: solid;
 	border-color: #147F76;
 	border-width: 5px;*/
@@ -219,11 +223,18 @@ body{
 @media only screen and (max-width: 600px) {
 
 	.logo img {
-		width: 200px;
-		height: 200px;
+		width: 300px;
+		height: 300px;
 	}
 }
 
+@media only screen and (max-width: 350px) {
+
+	.logo img {
+		width: 250px;
+		height: 250px;
+	}
+}
 
 
 /*------------------------------------------------------------------------------------------------------------*/
@@ -403,9 +414,9 @@ body{
 	text-align: center;
 }
 
-.unis .uniwrap img:hover {
+/*.unis .uniwrap img:hover {
 	transform: scale(1.5);
-}
+}*/
 
 /*------------------------------------------------------------------------------------------------------------*/
 
@@ -438,9 +449,9 @@ body{
 	grid-column-gap: 20px;
 }
 
-.proj .pwrap .p1, .proj .pwrap .p2 {
+/*.proj .pwrap .p1, .proj .pwrap .p2 {
 	width: 310px;
-}
+}*/
 
 .proj .pwrap .p1 {
 	/*margin: 0 0 0 auto;*/

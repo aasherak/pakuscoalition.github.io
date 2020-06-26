@@ -185,6 +185,14 @@ body{
 	animation: alogo 1s 1;
 }
 
+@media only screen and (max-width: 500px) {
+
+	.pheading h2 {
+		font-size: 4.5em;
+	}
+
+}
+
 .proj {
 	padding: 50px 20px 50px;
 }
